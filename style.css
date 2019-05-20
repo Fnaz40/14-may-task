@@ -1,7 +1,6 @@
 /* write your styles here */
 *{
     margin: 0px;
-    padding: 0px;
 }
 body{
     background-image: url(image/floral.png)
@@ -9,24 +8,123 @@ body{
 marquee{
     background-color: #ed484c;
     color: #ffffff;
-    font-size: bold;
+    font-weight: bold;
+    padding: 10px;
 }
 header{
     background-color: #4c4c4c;
-    margin-top: 5px;
-    padding: 0px;
+    justify-content: space-between;
+    padding: 4px;
+    display: flex;
+    margin-bottom: 4px;
+    margin-block-end: auto;
+    position: sticky;
+    top: 0px;
 }
 img{
-    margin-left: 10px;
-    height: 3em;
+    margin-left: 1em;
+    height: 2em;
     margin-top: 1em;
+    width: 4em;
+    margin-bottom: 1em;
 }
-nav{
+nav ul{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
 }
-ul{
-    text-decoration: none; 
+li{
     list-style: none;
+    margin: 20px;
+}
+a{
     color: #c8c8c8;
+    text-decoration: none;
+}
+#about-us{
+    height: 25em;
+     background-color: #f18d97c7;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#about-us h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 1em;
+}
+#about-us p{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: bold; 
+}
+button{
+    color: #E88893;
+    background-color: #170d0e;
+    padding: 0.8em 3em 0.8em 3em;
+    font-size: 2em;
+    border-style: none;
+    margin: auto;
+}
+#service{
+         background-color: #efece778;
+         height: 25em;
+         display: flex;
+}
+#service h2{
+    text-align: center;
+    padding: 2em;
+}
+#service > div{
+    width: 300px;
+    flex-direction: row;
+    margin: 100px 50px 100px 50px;
+    text-align: center;
+    font-size: 15px;
+    display: block;
+}
+#icon{
+    font-size: 100px;
+    margin: 15px 10px 1px 10px;
+}
+#icon:hover{
+    color: rgba(255, 100, 100, 0.884);
+}
+h3{
+    font-size: 20px;
+    margin: 15px;
+}
+div > p{
+     font-size: 16px;
+     line-height: 15px;
+}
+#portfolio {
+    height: 30em;
+       background-color: hsla(38, 38%, 79%, 0.7);
+       display: flex;
+       flex-direction: column;
+       
+}
+#portfolio h2{
+    text-align: center;
+    padding: 1em;
+    display: block;
+}
+#portfolio p{
+    display: block;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+#portfolio > figure{
+     flex-direction: row;
+     justify-content: space-between;
 }
