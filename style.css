@@ -24,6 +24,7 @@ marquee{
     color: #ffffff;
     font-weight: bold;
     padding: 10px;
+    font-family: 'Josefin Sans', sans-serif; 
 }
 header{
     background-color: #4c4c4c;
@@ -78,6 +79,7 @@ a{
     font-size: medium;
 }
 button{
+    font-family: 'Montserrat', sans-serif;
     color: #E88893;
     background-color: #170d0e;
     padding: 1.8em 6em 1.8em 6em;
@@ -89,6 +91,7 @@ button{
 }
 #service{
          background-color: #efece778;
+         flex-direction: column;
 }
 #service h2{
     text-align: center;
@@ -100,7 +103,7 @@ button{
     justify-content: center;
 }
 
- .row > div{
+.row > div{
     width: 300px;
     margin: 10px 50px 57px 50px;
     text-align: center;
