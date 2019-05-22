@@ -34,6 +34,7 @@ header{
     margin-block-end: auto;
     position: sticky;
     top: 0px;
+    z-index: 1000;
 }
 img{
     margin-left: 1em;
@@ -145,6 +146,7 @@ h3{
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
+    z-index: 999;
 }
 #portfolio figure > img {
     height: 243px;
