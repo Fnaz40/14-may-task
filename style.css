@@ -15,7 +15,6 @@ body{
 }
 
 .main-sect{
-
 display: flex;
 flex-direction: column;
 }
@@ -144,12 +143,16 @@ h3{
     padding: 20px;
     font-size: medium;
 }
-#portfolio > div{
+#portfolio h4{
+    font-size: 2em;
+    margin: 0px;
+    padding: 5px
+}
+#portfolio-img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 999;
+    justify-content: center;
 }
 #portfolio figure > img {
     height: 243px;
@@ -157,36 +160,49 @@ h3{
     border-radius: 10px;
     z-index: 1;
 }
-#portfolio > .hover-icons > i{
+#portfolio .btn{
     border-radius: 100%;
     color: white;
-    background-color: #170d0e;
+    background-color: rgb(0,0,0,0.5);
+    padding: 14px;
+    margin: 4px;
+    opacity: 1;
 }
-.portfolio-hover{
-    padding: 0px;
+#portfolio .btn:hover {
+     background-color: white;
+     color: #170d0e;
+}
+#portfolio-hover{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
+    z-index: 999;
+    padding: 0px;
     margin: 10px;
-    opacity: 0.9
+    /* opacity: 0.9 */
 }
-figcaption.hover-icons{
+
+#portfolio-hover:hover figcaption
+{
+    opacity: 1;
+}
+figcaption{
+    opacity: 0;
     text-align: center;
-    padding: 68px 0px 46px 2px;
+    padding: 68px 0px 48px 2px;
+    margin: 13px;
     z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 257px;
-    height: 145px;
+    width: 243px;
+    height: 130px;
     background-color: rgb(0,0,0,0.8);
     color: white;
     border-radius: 10px;
-    display: none;
-}
-#portfolio > img:hover figcaption{
-    opacity: 1px;
-    display: block;
 }
 #contact{
     align-items: center;
@@ -224,4 +240,10 @@ footer{
 footer:hover i{
     color: #ed484c;
     cursor: pointer;
+}
+@media screen and(max-width:600px){
+    .row {
+        display: flex;
+        flex-direction: column;
+}
 }
