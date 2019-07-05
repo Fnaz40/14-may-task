@@ -2,6 +2,10 @@
 *{
     margin: 0px;
 }
+/* body{
+    display: flex;
+    flex-wrap: wrap;
+} */
 h2{
     font-family: 'Rochester', cursive;
     font-size: 2em;
@@ -11,7 +15,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-image: url(image/floral.png)
+    background-image: url(image/floral.png);
 }
 
 .main-sect{
@@ -46,6 +50,7 @@ img{
 nav ul{
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 li{
     list-style: none;
@@ -54,6 +59,8 @@ li{
 a{
     color: #c8c8c8;
     text-decoration: none;
+    margin: -18px;
+    padding: 6px;
 }
 #about-us{
      background-color: #f18d97c7;
@@ -63,11 +70,10 @@ a{
 }
 #about-us h1{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3em;
     text-align: center;
     margin-bottom: 10px;
-    /* height: 30px; */
-    padding: 62px;
+    padding: 52px;
+    display: flex;
 }
 #about-us p{
     margin-bottom: 2em;
@@ -82,7 +88,7 @@ button{
     color: #E88893;
     background-color: #170d0e;
     padding: 1.8em 6em 1.8em 6em;
-    font-size: 21px;
+    font-size: 14px;
     font-weight: bold;
     border-style: none;
     margin-bottom: 15px;
@@ -100,6 +106,7 @@ button{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row > div{
@@ -232,7 +239,7 @@ figcaption{
 }
 footer{
     justify-content: center;
-    padding: 41px;
+    padding: 37px;
     display: flex;
      background-color: #212121;
      color: whitesmoke;
